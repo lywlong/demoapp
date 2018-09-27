@@ -1,0 +1,6 @@
+创建版本库:
+$ mkdir learngit
+$ cd learngit
+$ pwd
+$ls -ah
+$ git add git总结.txt
