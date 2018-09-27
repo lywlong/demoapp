@@ -10,3 +10,18 @@ $ git add git总结.txt
 $ git config --global user.name invictus
 $ git config --global user.email 694569409@qq.com
 
+$ git remote add origin git@github.com:lywlong/localRepository.git
+$ git pull --rebase origin master 合并
+$ git push -u origin master 更新
+
+$ ssh-keygen -t rsa -C "xxxxx@xx.com" 填写email地址，然后一直“回车”，获取key
+
+$ git status
+$ git diff git总结.txt
+"-"表示变动前的文件,"+++"表示变动后的文件.
+
+@@ -1,7 +1,7 @@
+前面的"-1,7″分成三个部分:减号表示第一个文件(即f1),"1″表示第1行,"7″表示连续7行.合在一起,就表示下面是第一个文件从第1行开始的连续7行.同样的,"+1,7″表示变动后,成为第二个文件从第1行开始的连续7行.
+
+
+
