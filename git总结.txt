@@ -2,5 +2,11 @@
 $ mkdir learngit
 $ cd learngit
 $ pwd
+
 $ls -ah
+
 $ git add git×Ü½á.txt
+
+$ git config --global user.name invictus
+$ git config --global user.email 694569409@qq.com
+
