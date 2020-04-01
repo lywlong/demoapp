@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ehcche name="DEFAULT_CACHE" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:noNamespaceSchemaLocation="http://www.ehcache.org/ehcache.xsd"
+        updateCheck="true" monitoring="autodetect"
+        dynamicConfig="true">
+    <diskStore path="../cache/default"/>
+
+    <defaultCache maxEntriesLocalHeap="0"
+                  eternal="false"
+                  timeToIdleSeconds="1200"
+                  timeToLiveSeconds="1200">
+    </defaultCache>
+
+    <cache name="testCache"
+           maxEntriesLocalHeap="1000"
+           maxEntriesLocalDisk="10000"
+           eternal="false"
+           diskSpoolBufferSizeMB="20"
+           timeToIdleSeconds="20"
+           timeToLiveSeconds="20"
+           memoryStoreEvictionPolicy="LFU"
+           transactionalMode="off">
+        <persistence strategy="localTempSwap"/>
+        <cacheEventListenerFactory class="com.example.demoapp.config.MyCacheEventListenerFactory"/>
+    </cache>
+
+</ehcche>
